@@ -2,7 +2,6 @@ const selectNumField = document.querySelector("#select__number");
 
 const guessNum = document.querySelector("#guess");
 const guessNumField = document.querySelector("#guess__number");
-const guessNumSubmit = document.querySelector("#guess__submit");
 
 const resultContents = document.querySelector('.result__text')
 const resultWinOrNot = document.querySelector('.result__win-or-not')

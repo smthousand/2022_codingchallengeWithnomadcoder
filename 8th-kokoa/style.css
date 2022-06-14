@@ -1,0 +1,62 @@
+@import url(animation.css);
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    background-color: #6bbcbe;
+}
+
+.rotate {
+    display: flex;
+    /* defalut row */
+    margin-bottom: 100px;
+    animation: rotateCircleAnimation 1.5s ease-in-out infinite;
+}
+
+.rotate__circle {
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    background-color: #fff;
+    margin-right: 20px;
+}
+
+.rotate__circle:last-child {
+    margin-right: 0;
+}
+
+.sound-effect {
+    display: flex;
+}
+
+.sound-effect__bar {
+    width: 10px;
+    height: 35px;
+    background-color: #fff;
+    margin-right: 5px;
+    animation: soundEffectAnimation 1.5s cubic-bezier(0.785, 0.135, 0.150, 0.860) infinite;
+}
+.sound-effect__bar:nth-child(2) {
+    animation-delay: .1s;
+}
+
+.sound-effect__bar:nth-child(3) {
+    animation-delay: .2s;
+}
+
+.sound-effect__bar:nth-child(4) {
+    animation-delay: .3s;
+}
+
+.sound-effect__bar:nth-child(5) {
+    animation-delay: .4s;
+    margin-right: 1px;
+}

@@ -1,0 +1,19 @@
+/* music-controller */
+.music-controller {
+    display: flex;
+    margin-bottom: 40px;
+}
+
+.music-controller__round {
+    width: 50%;
+}
+
+.music-controller__round i {
+    margin-right: 10px;
+}
+
+.music-controller__circle {
+    width: 25%;
+    display: flex;
+    justify-content: flex-end;
+}

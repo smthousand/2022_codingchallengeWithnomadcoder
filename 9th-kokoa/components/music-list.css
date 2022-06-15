@@ -1,0 +1,39 @@
+/* music-list */
+.music-list li {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.music-list li:nth-child(4) {
+    margin-bottom: 0;
+}
+
+.music-list li:nth-child(1) .music-list__album-art {
+    background-color: #f85a2a;
+}
+
+.music-list li:nth-child(2) .music-list__album-art {
+    background-color: #ff89bb;
+}
+
+.music-list li:nth-child(3) .music-list__album-art {
+    background-color: #1847e5;
+}
+
+.music-list li:nth-child(4) .music-list__album-art {
+    background-color: #00c6ad;
+}
+
+.music-list__album-art {
+    margin-right: 10px;
+}
+
+.music-list__contents {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.music-list__contents p {
+    color: #888;
+}

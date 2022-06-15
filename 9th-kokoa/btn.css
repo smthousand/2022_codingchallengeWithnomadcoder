@@ -1,0 +1,18 @@
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid #000;
+    border-width: 3px 3px 6px 3px;
+}
+
+.btn-round {
+    height: 70px;
+    border-radius: 15px;
+}
+
+.btn-circle {
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+}

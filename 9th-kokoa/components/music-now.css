@@ -1,0 +1,29 @@
+/* music-now */
+.music-now {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.music-now__album-art {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffbd11;
+}
+
+.music-now__album-art i {
+    color: #fff;
+}
+
+.music-now__contents {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+}
+
+.music-now__contents p {
+    font-size: 1.2em;
+}

@@ -1,0 +1,14 @@
+.alb {
+    border-radius: 15px;
+    border: 3px solid #000;
+}
+
+.alb-xl {
+    width: 150px;
+    height: 150px;
+}
+
+.alb-sm {
+    width: 60px;
+    height: 60px;
+}

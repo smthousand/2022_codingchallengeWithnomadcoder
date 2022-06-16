@@ -15,14 +15,14 @@
 .album__cnt {width: 60%;}
 
 /* cover */
-.section__art-covers {
+.section__album-covers {
     display: flex; 
     justify-content: flex-start;
     align-items: center;
     overflow-x: scroll;
 }
-.art-covers__cnt {margin-right: 20px;}
-.art-covers__cnt img {width: 100%; border-radius: 100px;}
+.album-covers__cnt {margin-right: 20px;}
+.album-covers__cnt img {width: 100%; border-radius: 100px;}
 
 /* member */
 .members__member-img {width: 100%; margin-bottom: 5px;}

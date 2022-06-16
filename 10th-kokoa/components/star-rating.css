@@ -1,0 +1,6 @@
+.star-rating {display: flex;margin-top: 5px;}
+
+.star-rating li {margin-right: 5px;}
+.star-rating li:last-child {margin-right: 0;}
+/* .star-rating li i {color: var(--primary)} */
+.star-rating li i.off {color: var(--faint)};

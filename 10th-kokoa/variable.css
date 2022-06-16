@@ -1,0 +1,17 @@
+:root {
+    /* color */
+    --dark: #15202b;
+    --muted: #192734;
+    --faint: #22303c;
+    --gray: #8899a6;
+    --white: #fff;
+    --primary: #00e0f7; /* lihgt */
+
+    --section-space: 40px;
+    --title-space: 20px;
+    --h1: 2em;
+    --h2: 1.5em;
+    --h3: 1.3em;
+    --h4: 1.1em; 
+    --span: .8em;
+}

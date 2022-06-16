@@ -1,0 +1,11 @@
+.album-cnt__bdg {margin-top: 10px;}
+
+.bdg {
+    background-color: var(--faint);
+    color: var(--gray);
+    border-radius: 4px;
+    padding: 3px 10px;
+    display: inline-block;
+    margin-bottom: 5px;
+    font-size: var(--span);
+}

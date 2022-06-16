@@ -1,0 +1,29 @@
+.main {
+    background: var(--dark);
+    padding: 170px 20px 20px 20px;
+}
+
+/* albume */
+.section__album {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.album__img {width: 40%; margin-right: 20px;}
+.album__img img {width: 100%; border-radius: 10px;}
+.album__cnt {width: 60%;}
+
+/* cover */
+.section__art-covers {
+    display: flex; 
+    justify-content: flex-start;
+    align-items: center;
+    overflow-x: scroll;
+}
+.art-covers__cnt {margin-right: 20px;}
+.art-covers__cnt img {width: 100%; border-radius: 100px;}
+
+/* member */
+.members__member-img {width: 100%; margin-bottom: 5px;}
+.members__member-cnt {margin-bottom: 30px;}

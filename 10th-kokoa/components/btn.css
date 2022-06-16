@@ -1,0 +1,29 @@
+.album-cnt__btn {
+    margin-top: 20px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.btn {
+    background: var(--primary);
+    padding: 10px 20px;
+    color: var(--dark);
+    border-radius: 13px;
+    font-size: var(--h4);
+}
+
+.btn i {
+    color: var(--dark);
+    margin-right: 10px;
+}
+
+.btn-mark {
+    background: var(--gray);
+    width: 50px;
+    height: 50px;
+    border-radius: 40px;
+    margin-right: 15px;
+}
+.btn-mark i {
+    margin-right: 0px;
+}

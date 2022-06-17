@@ -1,8 +1,10 @@
 :root {
     --primary: #e8c4b8;
     --secondary: #6c757d;
+    --tertiary: #ccc;
 
-    --h1: 2em;
+
+    --h1: 1.6em;
     --h2: 1.4em;
     --h3: 1.1em;
     --h4: 1em;

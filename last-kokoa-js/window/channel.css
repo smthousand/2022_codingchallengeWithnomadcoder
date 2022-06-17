@@ -1,0 +1,93 @@
+/* channel info */
+.main__channel-info {
+    padding: var(--vertical-space);
+    margin: 0 auto;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.channel-info__artist-img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
+    margin-bottom: 20px;
+}
+
+.channel-info__artist-name {margin-bottom: 5px;}
+.channel-info__artist-genre {margin-bottom: 20px;}
+
+.channel-info__btn {display: flex;}
+
+
+/* playlist */
+.main__playlist {
+    padding: var(--vertical-space);
+    height: 300px; 
+    overflow: scroll;
+    margin: 0 auto;
+}
+
+.playlist__items {
+    padding: 15px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.playlist__items:last-child {margin-bottom: 70px;}
+
+.items__cover {width: 40px;height: 40px;margin-right: 10px; position: relative;}
+.items__cover img {width: 100%;border-radius: 10px;}
+
+.item__img--select {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: inherit;
+    height: inherit;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    border-radius: 10px;
+}
+
+.item__img--select i {color: #fff;}
+
+.items__more {margin-left: auto; color: var(--secondary);}
+
+.playlist__items.active {box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;}
+
+.desc__artist {margin-bottom: 5px;}
+
+/* controller */
+.main__controller {
+    display: flex;
+    justify-content: space-between;
+    padding: var(--vertical-space);
+    display: flex;
+    align-items: center;
+    width: 90%;
+    z-index: 99;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 70px;
+    border-radius: 40px;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+}
+
+.main__controller .desc__music,
+.main__controller i {
+    color: #fff;
+}
+
+.controller__control {display: flex;align-items: center;}
+.controller__control i {margin-left: 25px;}

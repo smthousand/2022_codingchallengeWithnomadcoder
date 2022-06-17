@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <main class="main">
+        <div class="main__set-bar">
+            <i class="fa-solid fa-arrow-left fa-lg"></i>
+            <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+        </div>
+
+        <div class="main__channel-info">
+            <img src="images/channel_img01.png" alt="" class="channel-info__artist-img">
+            <h1 class="channel-info__artist-name">Muse</h1>
+            <h4 class="channel-info__artist-genre">Alternative Rock</h4>
+            <div class="channel-info__btn">
+                <button class="btn btn-dark">Shuffle</button>
+                <div class="btn btn-white"><i class="fa-solid fa-heart"></i> 202 971</div>
+            </div>
+        </div>
+
+        <div class="main__playlist"> <!-- height값 줘서 스크롤바 주기 -->
+            <article class="playlist__items">
+                <div class="items__cover"><img src="images/cd_img02.jpg" alt=""></div>
+                <div class="items__desc">
+                    <h5 class="desc__artist">Muse</h5>
+                    <h3 class="desc__music">Plug In Baby</h3>
+                </div>
+                <i class="fa-solid fa-ellipsis-vertical fa-lg items__more"></i>
+            </article>
+            <article class="playlist__items active">
+                <div class="items__cover"><img src="images/cd_img04.jpg" alt="" class="cover__img"><div class="item__img--select"><i class="fa-solid fa-play"></i></div></div>
+                <div class="items__desc">
+                    <h5 class="desc__artist">Muse</h5>
+                    <h3 class="desc__music">Supermassive Black Hole</h3>
+                </div>
+                <i class="fa-solid fa-ellipsis-vertical fa-lg items__more"></i>
+            </article>
+            <article class="playlist__items">
+                <div class="items__cover"><img src="images/cd_img03.jpg" alt=""></div>
+                <div class="items__desc">
+                    <h5 class="desc__artist">Muse</h5>
+                    <h3 class="desc__music">Time Is Running Out</h3>
+                </div>
+                <i class="fa-solid fa-ellipsis-vertical fa-lg items__more"></i>
+            </article>
+            <article class="playlist__items">
+                <div class="items__cover"><img src="images/cd_img05.jpg" alt=""></div>
+                <div class="items__desc">
+                    <h5 class="desc__artist">Muse</h5>
+                    <h3 class="desc__music">Uprising</h3>
+                </div>
+                <i class="fa-solid fa-ellipsis-vertical fa-lg items__more"></i>
+            </article>
+            <article class="playlist__items">
+                <div class="items__cover"><img src="images/cd_img04.jpg" alt=""></div>
+                <div class="items__desc">
+                    <h5 class="desc__artist">Muse</h5>
+                    <h3 class="desc__music">Starlight</h3>
+                </div>
+                <i class="fa-solid fa-ellipsis-vertical fa-lg items__more"></i>
+            </article>
+            <article class="playlist__items">
+                <div class="items__cover"><img src="images/cd_img05.jpg" alt=""></div>
+                <div class="items__desc">
+                    <h5 class="desc__artist">Muse</h5>
+                    <h3 class="desc__music">Resistance</h3>
+                </div>
+                <i class="fa-solid fa-ellipsis-vertical fa-lg items__more"></i>
+            </article>
+            <article class="playlist__items">
+                <div class="items__cover"><img src="images/cd_img03.jpg" alt=""></div>
+                <div class="items__desc">
+                    <h5 class="desc__artist">Muse</h5>
+                    <h3 class="desc__music">Hysteria</h3>
+                </div>
+                <i class="fa-solid fa-ellipsis-vertical fa-lg items__more"></i>
+            </article>
+        </div>
+        <div class="main__controller btn-dark">
+            <div class="controller__desc">
+                <h5 class="desc__artist">Muse</h5>
+                <h3 class="desc__music">Plug In Baby</h3>
+            </div>
+            <div class="controller__control">
+                <i class="fa-solid fa-backward-step"></i>
+                <i class="fa-solid fa-pause fa-2x"></i>
+                <i class="fa-solid fa-forward-step"></i>
+            </div>
+        </div>
+    </main>
+
+    <main class="main">
+        <div class="main__set-bar">
+            <i class="fa-solid fa-arrow-left fa-lg"></i>
+            <i class="fa-solid fa-ellipsis-vertical fa-lg"></i>
+        </div>
+    </main>
+    <!-- SCRIPT -->
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/726a7d5763.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

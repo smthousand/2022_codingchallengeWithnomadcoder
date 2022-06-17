@@ -1,0 +1,13 @@
+:root {
+    --primary: #e8c4b8;
+    --secondary: #6c757d;
+
+    --h1: 2em;
+    --h2: 1.4em;
+    --h3: 1.1em;
+    --h4: 1em;
+    --h5: .9em;
+    --h6: 0.7em;
+
+    --vertical-space: 0 20px;
+}

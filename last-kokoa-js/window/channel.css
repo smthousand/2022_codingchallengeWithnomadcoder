@@ -84,7 +84,7 @@
     box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
 }
 
-.main__controller .desc__music {width:170px; overflow:hidden; text-overflow: ellipsis; white-space:nowrap;}
+.main__controller .desc__music {width:160px; overflow:hidden; text-overflow: ellipsis; white-space:nowrap;}
 .main__controller .desc__music, .main__controller i {color: #fff;}
 
 .controller__control {display: flex;align-items: center;}

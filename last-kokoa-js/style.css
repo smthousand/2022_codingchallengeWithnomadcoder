@@ -6,7 +6,7 @@
 
 * {
     box-sizing: border-box !important;
-    font-family: 'Poboto', 'Noto Sans', sans-serif !important;
+    font-family: 'Roboto', 'Noto Sans', sans-serif !important;
     color: #363636;
 }
 h1 {font-size: var(--h1) !important; font-weight: bold;}

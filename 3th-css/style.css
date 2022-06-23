@@ -19,7 +19,7 @@ main {
     grid-template-columns: auto;
     grid-template-rows: 15% auto auto;
     grid-template-areas:
-        "header header header"
+        ".header .header .header"
         "article article aside"
         "footer footer footer";
     grid-gap: 10px;

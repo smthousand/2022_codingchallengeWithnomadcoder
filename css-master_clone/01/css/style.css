@@ -48,4 +48,29 @@ table {
   border-spacing: 0;
 }
 
-/*# sourceMappingURL=style.css.map */
+@font-face {
+  font-family: "Kano";
+  font-weight: 400;
+  src: url("../fonts/Kano.otf") format("opentype");
+}
+#___clone {
+  display: flex;
+}
+
+header {
+  width: 33%;
+  display: flex;
+  flex-direction: column;
+}
+header .heading {
+  align-items: stretch;
+  padding: 10vh 0 0 72px;
+}
+header .heading h1 {
+  font-family: "Kano", sans-serif;
+  font-size: 3.125em;
+  text-transform: uppercase;
+}
+header nav {
+  align-items: flex-end;
+}/*# sourceMappingURL=style.css.map */

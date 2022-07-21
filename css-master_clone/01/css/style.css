@@ -16,7 +16,7 @@ time, mark, audio, video {
   border: 0;
   font-size: 100%;
   font: inherit;
-  vertical-align: baseline;
+  vertical-align: bottom;
 }
 
 /* HTML5 display-role reset for older browsers */
@@ -48,10 +48,25 @@ table {
   border-spacing: 0;
 }
 
+main .wrap article .hero .vote div, main .wrap article .hero .vote button {
+  width: 50px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #da281b;
+  color: #fff;
+}
+
 @font-face {
   font-family: "Kano";
   font-weight: 400;
   src: url("../fonts/Kano.otf") format("opentype");
+}
+@font-face {
+  font-family: "Coolvetica";
+  font-weight: 400;
+  src: url("../fonts/coolvetica condensed rg.otf") format("opentype");
 }
 * {
   word-break: keep-all;
@@ -64,6 +79,10 @@ body {
 
 p {
   line-height: 150%;
+}
+
+a {
+  text-decoration: none;
 }
 
 header {
@@ -143,7 +162,7 @@ main .sticky-header {
   align-items: center;
   background-color: #e7473c;
   opacity: 97%;
-  z-index: 1;
+  z-index: 99;
 }
 main .sticky-header p {
   color: #fff;
@@ -155,13 +174,15 @@ main .sticky-header p a {
 main .sticky-header p a:hover {
   color: #fff;
 }
-main .container {
+main .wrap {
   margin-top: 140px;
 }
-main .container article {
-  padding: calc(10vh + 0.9em);
+main .wrap article {
+  padding: 10vh;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.3463760504) 500%);
 }
-main .container article .heading {
+main .wrap article .heading {
   color: #fff;
   display: flex;
   justify-content: space-between;
@@ -169,34 +190,109 @@ main .container article .heading {
   flex-wrap: wrap;
   margin-bottom: 36px;
 }
-main .container article .heading h2 {
-  font-family: "Helvetica", sans-serif;
+main .wrap article .heading h2 {
+  font-family: "Coolvetica", sans-serif;
+  font-feature-settings: "tnum";
   font-size: 4em;
   position: relative;
 }
-main .container article .heading h2 i {
+main .wrap article .heading h2 a {
   color: #831d16;
   top: 0;
-  left: -50px;
+  left: -30px;
   position: absolute;
   opacity: 50%;
 }
-main .container article .heading span {
+main .wrap article .heading h2 a:hover {
+  opacity: 80%;
+  transition: opacity 0.45s;
+}
+main .wrap article .heading span {
   margin-top: 13px;
 }
-main .container article .hero {
+main .wrap article .hero {
   width: 100%;
-}
-main .container article .hero .thumb {
   position: relative;
 }
-main .container article .hero .thumb img {
+main .wrap article .hero .ranking {
+  background: linear-gradient(195deg, rgb(225, 45, 48) 0%, rgb(181, 17, 20) 100%);
+  border-left: 1px solid rgba(131, 29, 22, 0.368627451);
+  position: absolute;
+  top: 30px;
+  left: -10px;
+  padding: 13px 15px 10px 15px;
+  z-index: 1;
+  color: #fff;
+  font-size: 1.4em;
+  display: flex;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.2);
+}
+main .wrap article .hero .ranking::after {
+  content: "";
+  width: calc(100% - 9px);
+  height: 2px;
+  background-color: #333;
+  filter: blur(1px);
+  position: absolute;
+  right: 0;
+  bottom: -2px;
+}
+main .wrap article .hero .ranking span {
+  font-size: 0.85em;
+  margin-right: 3px;
+}
+main .wrap article .hero .thumb {
+  position: relative;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 60px 40px -7px;
+  margin-bottom: 48px;
+}
+main .wrap article .hero .thumb img {
   width: 100%;
 }
-main .container article .hero .thumb a {
+main .wrap article .hero .thumb a {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+}
+main .wrap article .hero .vote {
+  position: absolute;
+  top: 0;
+  right: -50px;
+}
+main .wrap article .hero .vote button {
+  border: 0;
+  cursor: pointer;
+}
+main .wrap article .container {
+  width: 100%;
+  color: #fff;
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 64px;
+}
+main .wrap article .container .contents {
+  width: 50%;
+  display: flex;
+  flex-flow: column;
+}
+main .wrap article .container .rating {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+main .wrap article .container .rating p:last-child {
+  color: #831d16;
+}
+main .wrap article .comment {
+  color: #831d16;
+  display: flex;
+  justify-content: space-between;
+}
+main .wrap article .comment span {
+  border-bottom: 2px solid #831d16;
+  padding-bottom: 7px;
+  margin-left: 4px;
 }/*# sourceMappingURL=style.css.map */

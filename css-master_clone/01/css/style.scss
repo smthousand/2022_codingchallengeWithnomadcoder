@@ -4,6 +4,13 @@
 @import "_extends";
 
 @include font-face("Kano", "../fonts/Kano.otf", 400, null, otf);
+@include font-face(
+  "Coolvetica",
+  "../fonts/coolvetica condensed rg.otf",
+  400,
+  null,
+  otf
+);
 
 // 1440px 이하부터 미디어쿼리
 
@@ -16,6 +23,10 @@ body {
 }
 p {
   line-height: 150%;
+}
+
+a {
+  text-decoration: none;
 }
 
 header {
@@ -104,7 +115,7 @@ main {
     align-items: center;
     background-color: $primary;
     opacity: 97%;
-    z-index: 1;
+    z-index: 99;
 
     p {
       color: $white;
@@ -118,11 +129,13 @@ main {
     }
   }
 
-  .container {
+  .wrap {
     margin-top: 140px;
 
     article {
-      padding: calc(10vh + .9em);
+      padding: 10vh;
+      background: rgb(0,0,0);
+      background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.34637605042016806) 500%);      
 
       .heading {
         color: $white;
@@ -133,18 +146,22 @@ main {
         margin-bottom: 36px;
 
         h2 {
-          font-family: "Helvetica", sans-serif;
+          font-family: "Coolvetica", sans-serif;
+          font-feature-settings: "tnum";
           font-size: 4em;
           position: relative;
 
-          i {
+          a {
             color: $darker;
             top: 0;
-            left: -50px;
+            left: -30px;
             position: absolute;
             opacity: 50%;
+            &:hover {
+              opacity: 80%;
+              transition: opacity 0.45s;
+            }
           }
-
         }
 
         span {
@@ -154,21 +171,106 @@ main {
 
       .hero {
         width: 100%;
-        
-        .ranking {
+        position: relative;
 
+        .ranking {
+          background: linear-gradient(
+            195deg,
+            rgba(225, 45, 48, 1) 0%,
+            rgba(181, 17, 20, 1) 100%
+          );
+          border-left: 1px solid #831d165e;
+          position: absolute;
+          top: 30px;
+          left: -10px;
+          padding: 13px 15px 10px 15px;
+          z-index: 1;
+          color: $white;
+          font-size: 1.4em;
+          display: flex;
+          text-shadow: 0 1px 0 rgb(0 0 0 / 20%);
+
+          &::after {
+            content: "";
+            width: calc(100% - 9px);
+            height: 2px;
+            background-color: #333;
+            filter: blur(1px);
+            position: absolute;
+            right: 0;
+            bottom: -2px;
+          }
+
+          span {
+            font-size: $label;
+            margin-right: 3px;
+          }
         }
 
         .thumb {
           position: relative;
-          img {width: 100%;}
+          box-shadow: rgba(0, 0, 0, 0.2) 0px 60px 40px -7px;
+          margin-bottom: 48px;
+          img {
+            width: 100%;
+          }
           a {
             position: absolute;
-            top: 50%; 
+            top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
             color: $white;
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
           }
+        }
+
+        .vote {
+          position: absolute;
+          top: 0;
+          right: -50px;
+          button {
+            @extend %vote;
+            border: 0;
+            cursor: pointer;
+          }
+          div {
+            @extend %vote;
+          }
+        }
+      }
+
+      .container {
+        width: 100%;
+        color: $white;
+        display: flex;
+        justify-content: flex-end;
+        margin-bottom: 64px;
+
+        .contents {
+          width: 50%;
+          display: flex;
+          flex-flow: column;
+        }
+        .rating {
+          margin-top: 20px;
+          display: flex;
+          justify-content: space-between;
+          p {
+            &:last-child {
+              color: $darker;
+            }
+          }
+        }
+      }
+
+      .comment {
+        color: $darker;
+        display: flex;
+        justify-content: space-between;
+        span {
+          border-bottom: 2px solid $darker;
+          padding-bottom: 7px;
+          margin-left: 4px;
         }
       }
     }

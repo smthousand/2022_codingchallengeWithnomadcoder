@@ -1,9 +1,17 @@
 // Color Palette
 // primary secondary tertiary quaternary quinary senary septenary octonary nonary denary
 $primary: #e7473c;
+$secondary: #e12d30;
+$darker: #831d16;
+$muted: #666;
+$faint: #888;
 
-// Typography
+// Typography // Elements of a nespaper
 // display-2x, xl, lg, md headline title subheading body 1, 2 caption button 
-$headline: 3.125em; // 50px
+// $headline: 4.5em; //72px
+$lead: 1.5em; //25px
+$body: .95em; //15px
+$label: .85em; //13.5px
+$caption: .625em; //10px
 
 // Buttons 

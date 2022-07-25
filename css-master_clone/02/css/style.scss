@@ -1,0 +1,130 @@
+@import "_reset";
+@import "_variables";
+
+@import "_mixins";
+@import "_extends";
+
+@include font-face("Merriweather", "../fonts/Merriweather-Light.ttf", null, null, ttf);
+@include font-face("Merriweather-Italic", "../fonts/Merriweather-LightItalic.ttf", null, null, ttf);
+@include font-face("Poppins", "../fonts/Poppins-Light.ttf", null, null, ttf);
+
+body {
+    font-family: "Merriweather", sans-serif;
+    color: $base;
+    box-sizing: border-box;
+    i {font-family: "Merriweather-Italic", sans-serif;}
+    span {font-family: "Poppins", sans-serif; text-transform: uppercase; font-size: .625em; letter-spacing: 1.5px; margin-bottom: 30px; display: inline-block;}
+    h1 {font-size: 1.875em; line-height: 120%; margin-bottom: 30px;}
+    a {color: $base;}
+    .detail, .product {
+        padding: 40px 0;
+        @include laptop {
+            padding: 40px 140px;
+        }
+        @include tablet {
+            padding: 40px 50px;
+        }
+    }
+}
+
+// header {
+//     display: flex;
+//     justify-content: space-between;
+//     @include mobile {
+//         height: 50px;
+//     }
+// }
+
+main {
+    .hero {
+        position: relative;
+        @include laptop {
+            padding: 0 140px;
+        }
+        @include tablet {
+            padding: 0 50px;
+        }
+        picture {
+            img {
+                width: 100%;
+                height: 100%;
+            }
+
+        }
+        .contents {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: #fff;
+            margin: 0 auto;
+            padding: 40px 20px;
+            @include mobile {
+                position: inherit;
+                top: 0;
+                left: 0;
+                transform: translate(0);
+                color: $base;
+            }
+            h1 {
+                @include laptop {
+                    font-size: 3.125em;
+                }
+                @include desktop {
+                    font-size: 3.125em;
+                }
+            }
+            .move-button {
+                span {
+                    @extend %button;
+                    border-color: #fff;
+                    color: #fff;
+                    &:hover {
+                        background-color: #fff;
+                        color: $base;
+                    }
+
+                    @include mobile {
+                        border-color: $base;
+                        color: $base;
+                        &:hover {
+                            background-color: $base;
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .detail {
+        &:nth-child(2) {.contents {background-color: #fbf7f6;}}
+        display: flex;
+        @include mobile {
+            display: block;
+        }
+        img {
+            width: 50%;
+            @include mobile {
+                width: 100%;
+            }
+        }
+        .contents {
+            width: 50%;
+            text-align: center;
+            @include mobile {
+                width: 100%;
+            }
+            @extend %contents;
+            span {
+                @extend %button;
+            }
+            p {
+                font-size: 1.875em;
+                line-height: 120%;
+            }
+        }
+    }
+
+}

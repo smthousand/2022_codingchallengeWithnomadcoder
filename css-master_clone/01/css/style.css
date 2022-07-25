@@ -189,7 +189,6 @@ main .wrap {
 }
 main .wrap article {
   padding: 10vh;
-  background: rgb(0, 0, 0);
   background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.3463760504) 500%);
 }
 main .wrap article .heading {

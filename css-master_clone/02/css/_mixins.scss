@@ -1,0 +1,47 @@
+@mixin font-face($name, $path, $weight: null, $style: null, $exts: otf ttf) {
+  $src: null;
+  $formats: (
+    otf: "opentype",
+    ttf: "truetype",
+  );
+  @each $ext in $exts {
+    $format: map-get($formats, $ext);
+    $src: append($src, url(quote($path)) format(quote($format)), comma);
+  }
+  @font-face {
+    font-family: quote($name);
+    font-style: $style;
+    font-weight: $weight;
+    src: $src;
+  }
+}
+
+$mobile: 540px;
+$tablet: 1200px;
+$laptop: 1440px;
+$desktop: 1600px;
+
+// 크기가 480px 이하
+@mixin mobile {
+  @media (max-width: $mobile) {
+    @content;
+  }
+}
+// 크기가 481px 이상, 1200px 이하
+@mixin tablet {
+  @media (min-width: ($mobile + 1)) and (max-width: $tablet) {
+    @content;
+  }
+}
+// 크기가 1201px 이상, 1600px 이하
+@mixin laptop {
+  @media (min-width: ($tablet + 1)) and (max-width: $desktop) {
+    @content;
+  }
+}
+// 크기가 1600px 이상
+@mixin desktop {
+  @media (min-width: $desktop) {
+    @content;
+  }
+}

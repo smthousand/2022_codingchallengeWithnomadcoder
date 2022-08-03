@@ -54,9 +54,6 @@ body {
     animation: textRolling 240s linear infinite;
 }
 
-.area > p:nth-child(even) {
-}
-
 @keyframes textRolling {
     from {transform: translateX(20%);}
     to {transform: translateX(-100%);}

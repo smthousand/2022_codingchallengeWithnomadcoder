@@ -1,0 +1,39 @@
+@media (max-width: 816px) {
+    .hero-title h3 {
+        font-size: 3em;
+
+    }
+    .hero-title h1 {
+        font-size: 6em;
+    }
+  }
+
+  @media (max-width: 540px) {
+    .hero-title h3 {
+        font-size: 2em;
+
+    }
+    .hero-title h1 {
+        font-size: 5em;
+    }
+  }
+
+  @media (max-width: 460px) {
+    .hero-title h3 {
+        font-size: 2em;
+
+    }
+    .hero-title h1 {
+        font-size: 4.3em;
+    }
+  }
+
+  @media (max-width: 375px) {
+    .hero-title h3 {
+        font-size: 1.5em;
+
+    }
+    .hero-title h1 {
+        font-size: 2.8em;
+    }
+  }
